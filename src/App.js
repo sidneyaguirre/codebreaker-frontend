@@ -1,11 +1,23 @@
-import React from 'react';
-import './App.css';
-import Codebreaker from './component/Codebreaker';
+import React from "react";
+import "./App.css";
+import Codebreaker from "./components/Codebreaker";
+import Header from "./components/Header";
+import Rules from "./components/Rules";
 
 function App() {
   return (
     <div className="App">
-      <Codebreaker />
+      <div>
+        <Header />
+      </div>
+
+      <div>
+        <Codebreaker />
+      </div>
+
+      <div>
+        <Rules />
+      </div>
     </div>
   );
 }
